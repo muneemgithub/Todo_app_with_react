@@ -1,0 +1,134 @@
+/* Main container styling */
+.todo-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2.2em;
+    color: #00ffcc;
+    text-shadow: 0px 0px 10px #00ffcc, 0px 0px 20px #00ffcc;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and button container */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styling */
+  .input-container input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 8px;
+    outline: none;
+    background: #2b2b2b;
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  
+  .input-container input::placeholder {
+    color: #666;
+  }
+  
+  .input-container input:focus {
+    border-color: #00ffcc;
+  }
+  
+  /* Add button styling */
+  .input-container button {
+    padding: 12px 24px;
+    font-size: 1em;
+    background-color: #00ffcc;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.5);
+  }
+  
+  .input-container button:hover {
+    background-color: #00d1a0;
+    transform: scale(1.05);
+  }
+  
+  /* Task list styling */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Task item styling */
+  .task-item {
+    background: #2b2b2b;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Completed task styling */
+  .task-item.completed {
+    background-color: #4a4a4a;
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Task button styling */
+  .task-buttons button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .task-buttons button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Complete button */
+  .task-buttons button:first-child {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  .task-buttons button:first-child:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Remove button */
+  .task-buttons button:last-child {
+    background-color: #e74c3c;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(231, 76, 60, 0.5);
+  }
+  
+  .task-buttons button:last-child:hover {
+    background-color: #c0392b;
+  }
+  
